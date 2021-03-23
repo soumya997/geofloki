@@ -120,9 +120,10 @@ def demo():
     # cv2.imwrite("2021.bmp",Ioptique_resampled/255)
     # plt.savefig("myplot.png", dpi = 100)
     print(Ioptique_resampled.shape)
-    fp = "2021_2_img.bmp"
-    with open(fp, 'w') as f:
-        result.save(Ioptique_resampled,f)
+    # fp = "2021_2_img.bmp"
+    # with open(fp, 'w') as f:
+    #     result.save(Ioptique_resampled,f)
+    np.save("Ioptique_resampled.npy",Ioptique_resampled)
     # np.save('geekfile', Ioptique_resampled)
     # Ioptique_resampled.save("geeks.jpg")
     # pl.figure()
