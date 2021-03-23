@@ -4,5 +4,7 @@ import cv2
 c = np.load('geekfile.npy')
 fp = "2021_2_img.bmp"
 
-# cv2.imwrite("2021_3.jpg",c)
-print(c)
+
+# put name of the file here
+cv2.imwrite("2021_3.jpg",c)
+# print(c)
